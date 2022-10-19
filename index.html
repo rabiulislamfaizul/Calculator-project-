@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Calculator Tutorial</title>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+<script>
+  function calculat(x){
+    form.display.value=form.display.value + x;
+  }
+</script>
+  </head>
+  <body>
+   <h1>Calculator</h1>
+  <div class="card">
+    <div class="calc-head">
+      <form action="" name="form">
+      <input type="text" id="result" maxlength="10" name="display">
+    </div>
+    <div class="calc-body">
+     
+      <div>
+        <input type="button" class="btn" value="C" onclick="display.value=null"/>
+  <input type="button" class="btn" value="+/-" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="%"onclick="calculat(this.value)"/>
+  <input type="button" class="btn btn-style" value="÷" onclick="calculat(this.value)"/>
+      </div>
+      <div>
+        <input type="button" class="btn" value="7" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="8" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="9"onclick="calculat(this.value)"/>
+  <input type="button" class="btn btn-style" value="×" onclick="calculat(this.value)"/>
+      </div>
+      
+
+      <div>
+        <input type="button" class="btn" value="4" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="5"onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="6" onclick="calculat(this.value)"/>
+  <input type="button" class="btn btn-style" value="-" onclick="calculat(this.value)"/>
+      </div>
+      <div>
+        <input type="button" class="btn" value="1" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="2" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="3"onclick="calculat(this.value)"/>
+  <input type="button" class="btn btn-style" value="+" onclick="calculat(this.value)"/>
+      </div>
+            <div>
+        <input type="button" class="btn" value="0" onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="." onclick="calculat(this.value)"/>
+  <input type="button" class="btn" value="DEL" onclick="display.value=null"/>
+  <input type="button" class="btn" style="background:orange;" value="=" onclick="display.value=eval(display.value)"/>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
